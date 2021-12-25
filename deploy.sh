@@ -10,5 +10,5 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f https://github.comDavizs/feliz-navidad-nacho.git master:gh-pages
+git push -f https://github.com/Davizs/feliz-navidad-nacho.git master:gh-pages
 cd -
