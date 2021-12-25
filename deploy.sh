@@ -12,6 +12,3 @@ git add -A
 git commit -m 'deploy'
 git push -f git@github.com:Davizs/feliz-navidad-nacho.git master:gh-pages
 cd -
-echo "HOLA"
-echo $PWD
-echo "HOLA"
