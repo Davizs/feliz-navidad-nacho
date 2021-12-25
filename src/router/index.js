@@ -11,6 +11,9 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    meta: {
+      title: "Home - Regalitos",
+    },
   },
   {
     path: "/about",
@@ -20,6 +23,9 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    meta: {
+      title: "About - Regalitos",
+    },
   },
   {
     path: "/feliz-navidad-nacho",
@@ -46,7 +52,7 @@ router.afterEach((to) => {
     document.body.style.backgroundImage = `url(${to.meta.bgImage})`;
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundColor = "#464646";
+    document.body.style.backgroundColor = "#FFFFFF";
     document.body.style.height = "100%";
     document.body.style.overflow = "hidden";
   } else {

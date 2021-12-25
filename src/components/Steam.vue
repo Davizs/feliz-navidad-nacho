@@ -100,6 +100,15 @@ export default {
   props: {
     msg: String,
   },
+  methods: {
+    handleIcon() {
+      const favicon = document.getElementById("favicon");
+      favicon.href = "https://steamcommunity.com/favicon.ico";
+    },
+  },
+  created() {
+    this.handleIcon();
+  },
 };
 </script>
 
